@@ -1,0 +1,295 @@
+## Snippets from SnipMate, taken from
+## https://github.com/scrooloose/snipmate-snippets.git
+
+snippet <? "php mark" i
+<?php $1 ?>
+endsnippet
+
+snippet array "define array"
+$${1:arrayName} = array('${2:arrayKey}' => ${3:arrayVal});$0
+endsnippet
+
+snippet define "define CONSTANT"
+define('${1:Name}', ${2:Value});$0
+endsnippet
+
+snippet do "do...while"
+do {
+    ${2:// code... }
+} while (${1:/* condition */});"$0
+endsnippet
+
+snippet if "if"
+if (${1:/* condition */}) {
+    ${2:// code...}
+}$0
+endsnippet
+
+snippet elif "if"
+else if (${1:/* condition */}) {
+    ${2:// code...}
+}$0
+endsnippet
+
+snippet else "else"
+else {
+    ${1:// code...}
+}$0
+endsnippet
+
+snippet ifelse "if & else"
+if (${1:/* condition */}) {
+    ${2:// code...}
+} else {
+    ${3:// code...}
+}$0
+endsnippet
+
+snippet ifelif "if & else"
+if (${1:/* condition */}) {
+    ${2:// code...}
+} else if (${3:/* condition */}) {
+    ${4:// code...}
+} else {
+    ${5:// code...}
+}$0
+endsnippet
+
+snippet for "for loop"
+for (${1:$i = 0}; ${2:$i < $count}; ${3:$i++}) {
+    ${4:// code...}
+}$0
+endsnippet
+
+snippet forv "Foreach loop"
+foreach ($${1:variable} as $${2:val}) {
+    ${VISUAL}${3}
+}$0
+endsnippet
+
+snippet fork "foreach loop"
+foreach ($${1:variable} as $${2:key} => $${3:val}) {
+    ${4:// code...}
+}$0
+endsnippet
+
+snippet get "get value" i
+$_GET['${1}']$0
+endsnippet
+
+snippet post "post value" i
+$_POST['${1}']$0
+endsnippet
+
+snippet req "request value" i
+$_REQUEST['${1}']$0
+endsnippet
+
+snippet sess "session" i
+$_SESSION['${1}']$0
+endsnippet
+
+snippet file "files" i
+$_FILES['${1}']$0
+endsnippet
+
+snippet cook "cookie" i
+$_COOKIE['${1}']$0
+endsnippet
+
+snippet env "env" i
+$_ENV['${1}']$0
+endsnippet
+
+snippet serv "SERVER" i
+$_SERVER['${1}']$0
+endsnippet
+
+snippet include "include"
+include_once '${1:file}';$0
+endsnippet
+
+snippet require "require"
+require_once '${1:file}';$0
+endsnippet
+
+snippet ?: "?:"
+${1:retVal} ? ${3:a} : ${4:b};$0
+endsnippet
+
+snippet getter "PHP Class Getter"
+public function getter($$1) {
+    return $this->${2:$1};
+}$0
+endsnippet
+
+snippet setter "PHP Class Setter"
+public function setter($$1) {
+    $this->${2:$1} = ${3:$$1};
+    ${4:return $this;}
+}$0
+endsnippet
+
+snippet pub "Public function"
+public function ${1:name}($${2:param}) {
+    ${3:return null;}
+}$0
+endsnippet
+
+snippet pro "Protected function"
+protected function ${1:name}($${2:param}) {
+    ${3:return null;}
+}$0
+endsnippet
+
+snippet pri "Private function"
+private function ${1:name}($${2:param}) {
+    ${3:return null;}
+}$0
+endsnippet
+
+snippet pubs "Public static function"
+public static function ${1:name}($${2:param}) {
+    ${VISUAL}${3:return null;}
+}$0
+endsnippet
+
+snippet pros "Protected static function"
+protected static function ${1:name}($${2:param}) {
+    ${VISUAL}${3:return null;}
+}$0
+endsnippet
+
+snippet pris "Private static function"
+private static function ${1:name}($${2:param}) {
+    ${VISUAL}${3:return null;}
+}$0
+endsnippet
+
+snippet func "Function snip"
+function ${1:name}($${2:param}) {
+    ${3:return null;}
+}$0
+endsnippet
+
+snippet class "Class declaration template"
+class ${1:className} {
+    ${2:variable}
+
+    public function ${3:__construct}($${4:options}) {
+        ${5:// code}
+    }$0
+}
+endsnippet
+
+snippet echo "Dumb debug helper in HTML"
+echo $${1:variable}; exit;
+endsnippet
+
+snippet pre "Dumb debug helper in HTML"
+echo '<pre>'; print_r($${1:variable}); exit;
+endsnippet
+
+snippet dup "Dumb debug helper in HTML"
+echo '<pre>'; var_dump($${1:variable}); exit;
+endsnippet
+
+snippet while "while loop"
+while (${1:/* condition */}) {
+    ${2:// code...}
+}$0
+endsnippet
+
+snippet switch "swith stagment"
+switch ($${1:variable}) {
+    case '${2:value}':
+        ${3}
+        break;
+    ${4}
+    default:
+        ${5}
+        break;
+}$0
+endsnippet
+
+snippet case "case sub stagment"
+case '${1:value}':
+    ${2}
+    break;$0
+endsnippet
+
+snippet try "try...catch"
+try {
+    ${0}
+} catch (${1:Exception} $e) {
+    ${2:// code...}
+}$0
+endsnippet
+
+snippet line/ "多行注释"
+/**
+ * ${1: 描述}
+ */
+$0
+endsnippet
+
+snippet file/ "file comment"
+<?php
+/**
+ * ${1:描述}
+ *
+ * @copyright   Copyright (c) ${2: *}
+ * @license     ${3: *}
+ * @URL         $URL$
+ * @Rev         $Rev$
+ * @Author      $Author$
+ * @Created     `date "+%Y-%m-%d %H:%M:%S"`
+ * @Updated     $Date$
+ */
+$0
+endsnippet
+
+snippet cls/ "class comment"
+/**
+ * ${1:简述}
+ *
+ * @Date        $Date$
+ * @URL         $URL$
+ * @Rev         $Rev$
+ * @Author      $Author$
+ */
+$0
+endsnippet
+
+snippet fun/ "function comment"
+/**
+ * ${1:描述}
+ *
+ * @param       ${3:参数}
+ * @return      ${4:返回}
+ * @throws      ${5:异常}
+ */
+$0
+endsnippet
+
+snippet jquery "jquery ready"
+$(document).ready(function() {
+    $1
+});$0
+endsnippet
+
+snippet ajax "jquery ajax"
+$.ajax({
+    url:      ${1: url},
+    type:     ${2: post},
+    data:     ${3: data},
+    dataType: ${4: json},
+    success: function(data) {
+        $5
+    },
+    error: function() {
+        $6
+    }
+}
+});$0
+endsnippet
