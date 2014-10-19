@@ -314,6 +314,13 @@ function! ClearFiles()
 endfunction
 nnoremap <silent><leader>cf :call ClearFiles()<CR>
 
+" 切换粘贴模式
+function! TogglePaste()
+    set paste!
+    if exists('g:syntax_on') | syntax off | else | syntax on | endif
+endfunction
+nnoremap <silent><leader>ps :call TogglePaste()<CR>
+
 " 加载本地配置
 if filereadable(glob('$vimdir/vimrc'))
     source $vimdir/vimrc
