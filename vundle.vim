@@ -1,8 +1,8 @@
 " =================================================================================
-" File:         ~/.vim/vundle.vim
+" File:         ~/$vimfiles/vundle.vim
 " Descripttion: vim插件配置文件
 " Maintainer:   (@Tywin) - <tywinly@gmail.com>
-" Last Change:  17 Oct, 2014
+" Last Change:  - 19 Oct, 2014
 " =================================================================================
 
 " Vundle {{{

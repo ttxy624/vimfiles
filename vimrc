@@ -1,8 +1,8 @@
 " =================================================================================
-" File:         ~/.vimrc
+" File:         ~/$vimfiles/vimrc
 " Description:  Vim主配置文件
-" Maintainer:   (@emlight) - <ttxy624@gmail.com>
-" Last Change:  v1.0 - 22 April, 2014
+" Maintainer:   (@Tywin) - <tywinly@gmail.com>
+" Last Change:  - 19 Oct, 2014
 "
 " 编译参数：--enable-multibyte --with-features=huge --enable-pythoninterp=yes --enable-gui=auto
 " =================================================================================
