@@ -61,6 +61,13 @@ set autowrite
 set autochdir
 auto BufReadPost * if getfsize(expand('%:p')) > 2048000 | set nobackup | endif
 
+" 交换文件
+set swapfile
+let &directory=$vimdir.'/swpfiles'
+if !isdirectory(&directory)
+    call mkdir(&directory, 'p')
+endif
+
 " 备份目录
 let &backupdir=$vimdir.'/bakfiles/'.strftime('%m')
 if !isdirectory(&backupdir)
