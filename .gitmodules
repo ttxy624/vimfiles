@@ -1,6 +1,6 @@
 [submodule "vundle"]
-    path = "bundle/vundle"
-    url = "https://github.com/gmarik/Vundle.vim"
+    path = bundle/vundle
+    url = https://github.com/gmarik/Vundle.vim
 [submodule "vim-colorschemes"]
-    path = "bundle/vim-colorschemes"
-    url = "https://github.com/flazz/vim-colorschemes"
+    path = bundle/vim-colorschemes
+    url = https://github.com/flazz/vim-colorschemes
