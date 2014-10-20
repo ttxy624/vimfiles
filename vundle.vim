@@ -145,7 +145,8 @@ let g:user_emmet_settings={
 \ }
 " }}}
 
-" Markdown支持
+" Markdown支持 {{{
 Plugin 'plasticboy/vim-markdown'
+" }}}
 
 call vundle#end()
