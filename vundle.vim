@@ -5,10 +5,12 @@
 " Last Change:  - 19 Oct, 2014
 " =================================================================================
 
-" Vundle {{{
+" 插件管理 {{{
 filetype off
-set runtimepath+=$vundle
+
+set runtimepath+=$plugins/vundle
 call vundle#begin($plugins)
+
 Plugin 'gmarik/vundle'
 " }}}
 
