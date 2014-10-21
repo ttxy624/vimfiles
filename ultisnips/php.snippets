@@ -5,6 +5,10 @@ snippet <? "php mark" i
 <?php $1 ?>
 endsnippet
 
+snippet <= "php short mark" i
+<?= $1 ?>
+endsnippet
+
 snippet array "define array"
 $${1:arrayName} = array('${2:arrayKey}' => ${3:arrayVal});$0
 endsnippet
@@ -25,7 +29,7 @@ if (${1:/* condition */}) {
 }$0
 endsnippet
 
-snippet elif "if"
+snippet elif "else if"
 else if (${1:/* condition */}) {
     ${2:// code...}
 }$0
@@ -249,7 +253,7 @@ snippet file/ "file comment"
 $0
 endsnippet
 
-snippet cls/ "class comment"
+snippet class/ "class comment"
 /**
  * ${1:简述}
  *
@@ -261,7 +265,7 @@ snippet cls/ "class comment"
 $0
 endsnippet
 
-snippet fun/ "function comment"
+snippet func/ "function comment"
 /**
  * ${1:描述}
  *
