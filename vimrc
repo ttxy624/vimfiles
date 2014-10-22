@@ -78,7 +78,7 @@ endif
 let &backupext='_»_'.substitute(substitute(getcwd(), "['\" ():*?<>|]", "-", "g"), "[\\/]", "+", "g").'+'.strftime('%m%d%H').'.bak'
 
 " 插件管理
-let $vundle = $vimfiles.'/vundle.vim'
+let $vundle=$vimfiles.'/vundle.vim'
 if filereadable($vundle)
     source $vundle
 endif
