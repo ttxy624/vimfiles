@@ -158,6 +158,7 @@ Plugin 'rking/ag.vim'
 let g:agprg='ag --column'
 if GetOS() == 'windows'
     let g:agprg='ag.exe --column'
+endif
 " }}}
 
 call vundle#end()
