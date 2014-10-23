@@ -156,6 +156,8 @@ Plugin 'plasticboy/vim-markdown'
 " git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
 Plugin 'rking/ag.vim'
 let g:agprg='ag --column'
+if GetOS() == 'windows'
+    let g:agprg='ag.exe --column'
 " }}}
 
 call vundle#end()
