@@ -148,10 +148,6 @@ let g:user_emmet_settings={
 \ }
 " }}}
 
-" Markdown支持 {{{
-Plugin 'plasticboy/vim-markdown'
-" }}}
-
 " 搜索增强 {{{
 " git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
 Plugin 'rking/ag.vim'
